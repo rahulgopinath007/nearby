@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:title="HOME"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        />
+
+
+    <item
+        android:id="@+id/activerequest"
+        android:title="Active Request"
+        android:icon="@drawable/ic_baseline_how_to_reg_24"
+        android:fontFamily="@font/poppins_medium"
+        
+        />
+
+    <item
+        android:id="@+id/category"
+        android:title="Category"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:fontFamily="@font/poppins_medium"
+        />
+
+    <item
+        android:id="@+id/setting"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:fontFamily="@font/poppins_medium"
+        />
+
+</menu>

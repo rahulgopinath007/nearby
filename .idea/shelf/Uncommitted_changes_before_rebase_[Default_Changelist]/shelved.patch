@@ -1,0 +1,41 @@
+Index: app/src/main/java/com/example/navigation/MainActivity2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.navigation;\r\n\r\nimport androidx.appcompat.app.ActionBar;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.ArrayAdapter;\r\nimport android.widget.Button;\r\nimport android.widget.Spinner;\r\nimport android.widget.Toast;\r\n\r\npublic class MainActivity2 extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main2);\r\n        ActionBar actionBar = getSupportActionBar();\r\n        actionBar.hide();\r\n        //spinner\r\n        Spinner mySpinner =(Spinner) findViewById(R.id.spinner1);\r\n        ArrayAdapter<String> myadapter= new ArrayAdapter<String>(MainActivity2.this,\r\n                android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Levels));\r\n        myadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);\r\n        mySpinner.setAdapter(myadapter);\r\n        //confirm button\r\n        Button button;\r\n        button=(Button) findViewById(R.id.btn);\r\n        button.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                Toast.makeText(getApplicationContext(), \"Service Request Posted!\", Toast.LENGTH_LONG).show();\r\n                Intent mintent = new Intent(getApplicationContext(),MainActivity.class);\r\n                startActivity(mintent);\r\n            }\r\n        });\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/navigation/MainActivity2.java b/app/src/main/java/com/example/navigation/MainActivity2.java
+--- a/app/src/main/java/com/example/navigation/MainActivity2.java	(revision 67a058902b029b24ee9d9847c84185d1fde69dd3)
++++ b/app/src/main/java/com/example/navigation/MainActivity2.java	(date 1639903886546)
+@@ -20,24 +20,24 @@
+         ActionBar actionBar = getSupportActionBar();
+         actionBar.hide();
+         //spinner
+-        Spinner mySpinner =(Spinner) findViewById(R.id.spinner1);
+-        ArrayAdapter<String> myadapter= new ArrayAdapter<String>(MainActivity2.this,
+-                android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Levels));
++        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
++        ArrayAdapter<String> myadapter = new ArrayAdapter<String>(MainActivity2.this,
++                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Levels));
+         myadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+         mySpinner.setAdapter(myadapter);
+         //confirm button
+         Button button;
+-        button=(Button) findViewById(R.id.btn);
++        button = (Button) findViewById(R.id.btn);
+         button.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Toast.makeText(getApplicationContext(), "Service Request Posted!", Toast.LENGTH_LONG).show();
+-                Intent mintent = new Intent(getApplicationContext(),MainActivity.class);
++                Intent mintent = new Intent(getApplicationContext(), MainActivity.class);
+                 startActivity(mintent);
+             }
+         });
+ 
+-
++    }}
+ 
+ 
+ 

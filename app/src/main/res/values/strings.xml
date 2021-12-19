@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nearby</string>
+    <string name="heading"><b>Nearby</b></string>
+    <string-array name="Levels">
+        <item>Level A Job</item>
+        <item>Level B Job</item>
+        <item>Level C Job</item>
+        <item>Level D Job</item>
+    </string-array>
+</resources>
