@@ -20,24 +20,24 @@ public class MainActivity2 extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         //spinner
-        Spinner mySpinner =(Spinner) findViewById(R.id.spinner1);
-        ArrayAdapter<String> myadapter= new ArrayAdapter<String>(MainActivity2.this,
-                android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Levels));
+        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+        ArrayAdapter<String> myadapter = new ArrayAdapter<String>(MainActivity2.this,
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Levels));
         myadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myadapter);
         //confirm button
         Button button;
-        button=(Button) findViewById(R.id.btn);
+        button = (Button) findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Service Request Posted!", Toast.LENGTH_LONG).show();
-                Intent mintent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent mintent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(mintent);
             }
         });
 
-
+    }}
 
 
 
